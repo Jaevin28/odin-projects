@@ -1,0 +1,83 @@
+/* Universal selector: only set font-family */
+* {
+    font-family: "Anonymous Pro", monospace;
+}
+
+/* Set text color for body */
+body {
+    background-color: #64badc;
+    color: #F6F6F6;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main-container {
+    display: flex;
+}
+
+.grid {
+    width: 50%;
+    height: 70vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 35vmax;
+    max-height: 35vmax;
+    border: 1px solid #e3e0e0; /* lighter border for visibility */
+    overflow: hidden;
+    margin: auto;
+}
+
+.grid-row {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+.grid-unit {
+    flex: 1;
+    border: 1px solid #e3e0e0;
+    background-color: #f0f0f0; /* light gray for better contrast */
+    width: 67px;
+    height: 67px;
+    aspect-ratio: 1/1;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.options {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.option-div {
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.clear-btn {
+    background-color: #414141;
+    color: #F6F6F6; /* ensure button text is visible */
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    margin-top: 150px;
+}
